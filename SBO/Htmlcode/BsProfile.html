@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Business Optimizer - Profile</title>
+    <link rel="stylesheet" href="/SBO/CSS/BsProfile.css">
+</head>
+<body>
+    <header class = "Logo">
+        <div class="logo-icon">SBO
+            <span>SBO Cart</span>
+        </div>
+        <nav class="top-row">
+            <a href="#Market">Market</a>
+            <a href="#Genre">Genre</a>
+            <a href="#Ads">ADs</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder = "Search for Products or stores..">
+        </div>
+        <div class="header-icons">
+            <button class="icon-btn">🔔</button>
+            <button class="icon-btn">🛒</button>
+            <img src="https://via.placeholder.com/36" alt="Profile" class="profile-pic">
+        </div>
+    </header>
+    <div class="info-container">
+        <div class="view-switch">
+            <a href="#Business">Switch to Business Owner View</a>
+        </div>
+        <div class="profile-selection">
+            <div class="profile-info">
+                <img src="https://via.placeholder.com/80" alt="Annie Buyer" class="profile-avatar">
+                <div class="profile-details">
+                    <h2>Aditya Akshat</h2>
+                    <div class="role">Buyer</div>
+                    <div class="email">Atk23@gmail.com</div>
+                </div>
+            </div>
+            <button class="edit-btn">Edit Profile</button>
+        </div>
+        <h3 class = "section-title">Account Actions</h3>
+        <div class="actions-grid">
+            <div class="action-card" onclick ="navigate('payment')">
+                <div class="action-icon">💳</div>
+                <h3>Payment Methods</h3>
+                <p>Manage your credit cards and payment options</p>
+            </div>
+            <div class="action-card" onclick = " navigate('shipping')">
+                <div class="action-icon">📍</div>
+                <h3>Shipping Addresses</h3>
+                <p>Update or add new delivery address</p>
+            </div>
+            <div class="action-card" onclick = "navigate('Cart')">
+                <div class="action-icon">cart_img</div>
+                <h3>Added to cart</h3>
+                <p>Here is your wishlist and items added to your card</p>
+            </div>
+            <div class="action-card" onclick ="navigate('notifications')">
+                <div class="action-icon">Notification_img</div>
+                <h3>Notification Settings</h3>
+                <p>Customize your email and app notification preferences</p>
+            </div>
+        </div>
+        <div class="order-history">
+            <h3 class="section-title">Order History</h3>
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>Order Id</th>
+                        <th>Order Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick = "viewOrder('SBO-001')">
+                        <td>SBO-001</td>
+                        <td>Mopping XX100</td>
+                        <td>2025-12-12</td>
+                        <td>$50.00</td>
+                        <td><span class="status-badge Delivered">Delivered</span></td>
+                    </tr>
+                    <tr onclick = "viewOrder('SBO-002')">
+                        <td>SBO-002</td>
+                        <td>Jamzz Speaker</td>
+                        <td>2025-10-22</td>
+                        <td>$150.00</td>
+                        <td><span class="status-badge Pending">Pending</span></td>
+                    </tr>
+                    <tr onclick = "viewOrder('SBO-003')">
+                        <td>SBO-003</td>
+                        <td>Ptron Gaming Mouse</td>
+                        <td>2025-11-12</td>
+                        <td>$90.00</td>
+                        <td><span class="status-badge Cancelled">Cancelled</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src ="/SBO/JavascriptCode/BsProfile.js"></script>
+</body>
+</html>
